@@ -11,7 +11,7 @@ String password = "";
 String host     = "api.thingspeak.com";
 const int httpPort   = 80;
 
-String writeUrl = "/update?api_key=62FJS1CM2EG2RG62&field1=";
+String writeUrl = "/update?api_key=62FJS1CM2EG2RG62&field1="; //replace with your write api key
 
 void setupESP8266(void) {
   
