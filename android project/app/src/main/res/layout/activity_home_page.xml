@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20sp"
+            android:text="SENSOR VALUES"
+            android:textColor="#F10A0A"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="16sp"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/temperature_text"
+                android:layout_width="180dp"
+                android:layout_height="60sp"
+                android:layout_gravity="start"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="start"
+                android:padding="16sp"
+                android:text="TEMPERATURE"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/temperature_view"
+                android:layout_width="100sp"
+                android:layout_height="60sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="16sp"
+                android:text="Value"
+                android:textColor="#F10A0A"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                style="@style/CardView.Light"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:layout_gravity="end"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/temperature" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20sp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="16sp"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/humidity_text"
+                android:layout_width="180sp"
+                android:layout_height="60sp"
+                android:layout_gravity="start"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="start"
+                android:padding="16sp"
+                android:text="HUMIDITY"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/humidity_view"
+                android:layout_width="100sp"
+                android:layout_height="60sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="16sp"
+                android:text="Value"
+                android:textColor="#F10A0A"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                style="@style/CardView.Light"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:layout_gravity="end"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/humidity1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40sp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/start_btn_homepage"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_gravity="start"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#BF0202"
+                android:gravity="center"
+                android:text="start"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/stop_btn_homepage"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_gravity="end"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#BF0202"
+                android:gravity="center"
+                android:text="stop"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/set_temp_value_btn"
+            android:layout_width="360dp"
+            android:layout_height="60sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40sp"
+            android:backgroundTint="#BF0202"
+            android:text="Set Temperature Limits"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/update_api_btn_home"
+            android:layout_width="360dp"
+            android:layout_height="60sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20sp"
+            android:backgroundTint="#BF0202"
+            android:text="Update api keys"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/progressbar_homepage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
